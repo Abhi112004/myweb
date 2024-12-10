@@ -980,7 +980,7 @@ align-items: center;
     margin-bottom: 7px;
   }
   .Featured-outer .Featured-inner .Featured-item .Featured-item-inner .Featured-text .btn {
-    padding: 3px 6px;
+    padding: 10px 6px;
     font-size: 12px;
   }
   .brand-outer .brand-inner .brand-item {
@@ -1010,4 +1010,109 @@ align-items: center;
     
   }
 }
+@media (max-width:639px) {
+  .container{
+    max-width:460px;
+  }
+  .slider-outer .slider-inner .slider-text p {
+    font-size: 20px;
+  }
+  .slider-outer .slider-inner .slider-text p span {
+    font-size: 30px;
+  }
+  .slider-outer .slider-inner .slider-text span {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .slider-outer .slider-inner .slider-text .btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+  .ads-outer .ads-inner .ads-item {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 10px;
+  }
+  .ads-outer1 .ads-inner1 .ads-item1 {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 15px;
+  }
+  .customer-outer::before {
+display: none;
+  }
+  .customer-outer::after {
+display: none;
+  }
+}
+@media (max-width:479px) {
+  .container{
+max-width: 100%;
+  }
+  .slider-outer .slider-inner .slider-text p {
+    font-size: 15px;
+  }
+  .slider-outer .slider-inner .slider-text p span {
+    font-size: 18px;
+  }
+  .slider-outer .slider-inner .slider-text strong {
+    font-size: 15px;
+  }
+  .slider-outer .slider-inner .slider-text span {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .slider-outer .slider-inner .slider-text .btn {
+    padding: 3px 5px;
+    font-size: 8px;
+  }
+  .shop-outer .shop-inner .shop-item {
+    width: 100%;
+  }
+  .shop-outer .shop-inner .shop-item:nth-last-child(3) {
+  display: none;
+  }
+  .Featured-outer .Featured-inner .Featured-item .Featured-item-inner .Featured-sale {
+  
+    font-size: 10px;
+  }
+  .Featured-outer .Featured-inner .Featured-item .Featured-item-inner .Featured-new {
+    font-size: 10px;
+  }
+  .brand-outer .brand-inner .brand-item {
+    width: 50%;
+  }
+  .brand-outer .brand-inner .brand-item:nth-last-child(3) {
+   display: none;
+  }
+  .title h2 {
+    font-size: 20px;
+  }
+  .brand-outer .brand-inner .brand-item .brand-item-inner {
+    display: block;
+    padding: 0 0px;
+  }
+  .customer-outer .customer-inner .customer-photo {
+    
+    width: 30%;
+   
+  }
+  .footer-top .top-inner p::before {
+    content: "";
+    position: absolute;
+    top: -11%;
+    left: 0;
+    transform: translate(0,-58%);
+    background: url(../image/newsletter-icon.png) no-repeat scroll center top;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .footer-top .top-inner p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 
