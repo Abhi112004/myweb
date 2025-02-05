@@ -15,9 +15,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="assats/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assats/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assats/css/style.css" />
+    <script src="assats/js/jquery-3.7.1.min.js"></script>
+    <script src="assats/js/owl.carousel.min.js"></script>
   </head>
-  <body>
+  <body onload="lode()">
     <!-- start header section -->
     <div class="header">
       <!-- strat Top -->
@@ -176,40 +180,73 @@
           <div class="title">
             <h2>Shop By <i>Category</i></h2>
           </div>
-          <div class="Shop-inner">
-            <div class="Shop-item">
+          <div class="Shop-inner owl-carousel owl-theme ">
+            <div class="Shop-item item ">
               <div class="Shop-item-inner">
                 <img src="assats/image/1.jpg" alt="1" />
                 <div class="Shop-text"><p>books</p></div>
               </div>
             </div>
-            <div class="Shop-item">
+            <div class="Shop-item item">
               <div class="Shop-item-inner">
                 <img src="assats/image/2.jpg" alt="2" />
                 <div class="Shop-text">mens</div>
               </div>
             </div>
-            <div class="Shop-item">
+            <div class="Shop-item item">
               <div class="Shop-item-inner">
                 <img src="assats/image/3.jpg" alt="3" />
                 <div class="Shop-text">women</div>
               </div>
             </div>
-            <div class="Shop-item">
+            <div class="Shop-item item">
               <div class="Shop-item-inner">
                 <img src="assats/image/4.jpg" alt="4" />
                 <div class="Shop-text">kids</div>
               </div>
             </div>
-            <div class="Shop-item">
+            <div class="Shop-item item">
               <div class="Shop-item-inner">
                 <img src="assats/image/5.jpg" alt="5" />
+                <div class="Shop-text">living room</div>
+              </div>
+            </div>
+            <div class="Shop-item item">
+              <div class="Shop-item-inner">
+                <img src="assats/image/6.jpg" alt="5" />
+                <div class="Shop-text">living room</div>
+              </div>
+            </div>
+            <div class="Shop-item item">
+              <div class="Shop-item-inner">
+                <img src="assats/image/7.jpg" alt="5" />
                 <div class="Shop-text">living room</div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 2,
+            },
+            767: {
+              items: 3,
+            },
+            992: {
+              items: 4,
+            },
+          },
+        });
+      </script>
       <!-- end shop section -->
       <!-- start ads section -->
       <div class="ads-outer">
@@ -259,8 +296,8 @@
           <div class="title">
             <h2>Featured <i>Collection</i></h2>
           </div>
-          <div class="Featured-inner">
-            <div class="Featured-item">
+          <div class="Featured-inner owl-carousel owl-theme">
+            <div class="Featured-item item">
               <div class="Featured-item-inner">
                 <div class="Featured-img">
                   <img src="assats/image/product6_1.jpg" alt="product6_1" />
@@ -276,7 +313,7 @@
                 </div>
               </div>
             </div>
-            <div class="Featured-item">
+            <div class="Featured-item item">
               <div class="Featured-item-inner">
                 <div class="Featured-img">
                   <img src="assats/image/product7.jpg" alt="product7" />
@@ -292,7 +329,7 @@
                 </div>
               </div>
             </div>
-            <div class="Featured-item">
+            <div class="Featured-item item">
               <div class="Featured-item-inner">
                 <div class="Featured-img">
                   <img src="assats/image/product8.jpg" alt="product8" />
@@ -308,7 +345,7 @@
                 </div>
               </div>
             </div>
-            <div class="Featured-item">
+            <div class="Featured-item item">
               <div class="Featured-item-inner">
                 <div class="Featured-img">
                   <img src="assats/image/product9.jpg" alt="product9" />
@@ -324,7 +361,7 @@
                 </div>
               </div>
             </div>
-            <div class="Featured-item">
+            <div class="Featured-item item">
               <div class="Featured-item-inner">
                 <div class="Featured-img">
                   <img src="assats/image/product10.jpg" alt="product10 " />
@@ -340,9 +377,62 @@
                 </div>
               </div>
             </div>
+            <div class="Featured-item item">
+              <div class="Featured-item-inner">
+                <div class="Featured-img">
+                  <img src="assats/image/product3_1_1.jpg" alt="product10 " />
+                  <div class="img-text">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-chart-simple"></i>
+                  </div>
+                </div>
+                <div class="Featured-text">
+                  <p>Aliquam quaerat</p>
+                  <span>$199.00</span>
+                  <a href="" class="btn">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="Featured-item item">
+              <div class="Featured-item-inner">
+                <div class="Featured-img">
+                  <img src="assats/image/product2_1.jpg" alt="product10 " />
+                  <div class="img-text">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-chart-simple"></i>
+                  </div>
+                </div>
+                <div class="Featured-text">
+                  <p>Aliquam quaerat</p>
+                  <span>$199.00</span>
+                  <a href="" class="btn">Add to cart</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 2,
+            },
+            767: {
+              items: 3,
+            },
+            992: {
+              items: 4,
+            },
+          },
+        });
+      </script>
       <!-- end Featured   section -->
       <!-- start ads1   section -->
       <div class="ads1-outer">
@@ -400,8 +490,8 @@
           <div class="title">
             <h2>New <i>Products</i></h2>
           </div>
-          <div class="new-inner">
-            <div class="new-item">
+          <div class="new-inner owl-carousel owl-theme">
+            <div class="new-item item">
               <div class="new-item-inner">
                 <div class="new-img">
                   <img src="assats/image/product8.jpg" alt="product8" />
@@ -417,7 +507,7 @@
                 </div>
               </div>
             </div>
-            <div class="new-item">
+            <div class="new-item item">
               <div class="new-item-inner">
                 <div class="new-img">
                   <img src="assats/image/product9.jpg" alt="product8" />
@@ -433,7 +523,7 @@
                 </div>
               </div>
             </div>
-            <div class="new-item">
+            <div class="new-item item">
               <div class="new-item-inner">
                 <div class="new-img">
                   <img src="assats/image/product10.jpg" alt="product8" />
@@ -449,7 +539,7 @@
                 </div>
               </div>
             </div>
-            <div class="new-item">
+            <div class="new-item item">
               <div class="new-item-inner">
                 <div class="new-img">
                   <img src="assats/image/product11.jpg" alt="product8" />
@@ -465,7 +555,7 @@
                 </div>
               </div>
             </div>
-            <div class="new-item">
+            <div class="new-item item">
               <div class="new-item-inner">
                 <div class="new-img">
                   <img src="assats/image/product10_1_1.jpg" alt="product8" />
@@ -481,16 +571,69 @@
                 </div>
               </div>
             </div>
+            <div class="new-item item">
+              <div class="new-item-inner">
+                <div class="new-img">
+                  <img src="assats/image/product6_1.jpg" alt="product8" />
+                  <div class="img-text">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-chart-simple"></i>
+                  </div>
+                </div>
+                <div class="new-text">
+                  <p>Reiciendis voluptatibus</p>
+                  <span>$249.00</span>
+                  <a href="" class="btn">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="new-item item">
+              <div class="new-item-inner">
+                <div class="new-img">
+                  <img src="assats/image/product7.jpg" alt="product8" />
+                  <div class="img-text">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-chart-simple"></i>
+                  </div>
+                </div>
+                <div class="new-text">
+                  <p>Reiciendis voluptatibus</p>
+                  <span>$249.00</span>
+                  <a href="" class="btn">Add to cart</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 2,
+            },
+            767: {
+              items: 3,
+            },
+            992: {
+              items: 4,
+            },
+          },
+        });
+      </script>   
       <!-- end new   section -->
       <!-- start test   section -->
       <div class="test-outer">
         <div class="container">
           <div class="title"><h2>Our Testimonials</h2></div>
-          <div class="test-inner">
-            <div class="test-item">
+          <div class="test-inner owl-carousel owl-theme">
+            <div class="test-item item">
               <div class="test-item-inner">
                 <img src="assats/image/c1.jpg" alt="c1" />
                 <div class="test-text">
@@ -505,7 +648,7 @@
                 </div>
               </div>
             </div>
-            <div class="test-item">
+            <div class="test-item item">
               <div class="test-item-inner">
                 <img src="assats/image/c2.jpg" alt="c1" />
                 <div class="test-text">
@@ -520,7 +663,7 @@
                 </div>
               </div>
             </div>
-            <div class="test-item">
+            <div class="test-item item">
               <div class="test-item-inner">
                 <img src="assats/image/c3.jpg" alt="c1" />
                 <div class="test-text">
@@ -535,9 +678,45 @@
                 </div>
               </div>
             </div>
+            <div class="test-item item">
+              <div class="test-item-inner">
+                <img src="assats/image/c2.jpg" alt="c1" />
+                <div class="test-text">
+                  <strong>Jhon Doe</strong>
+                  <span>CEO</span>
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur.duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            767: {
+              items: 2,
+            },
+            992: {
+              items: 3,
+            },
+          },
+        });
+      </script>
       <!-- end test   section -->
       <!-- Start blogs   section -->
       <div class="blog-outer">
@@ -545,8 +724,8 @@
           <div class="title">
             <h2>Latest <i>Blogs</i></h2>
           </div>
-          <div class="blog-inner">
-            <div class="blog-item">
+          <div class="blog-inner owl-carousel owl-theme">
+            <div class="blog-item item">
               <div class="blog-item-inner">
                 <div class="blog-img">
                   <img src="assats/image/blog-1.png" alt="" />
@@ -568,7 +747,8 @@
                 </div>
               </div>
             </div>
-            <div class="blog-item">
+    
+            <div class="blog-item item">
               <div class="blog-item-inner">
                 <div class="blog-img">
                   <img src="assats/image/blog-2.png" alt="" />
@@ -589,7 +769,7 @@
                 </div>
               </div>
             </div>
-            <div class="blog-item">
+            <div class="blog-item item">
               <div class="blog-item-inner">
                 <div class="blog-img">
                   <img src="assats/image/blog-3.png" alt="" />
@@ -610,9 +790,52 @@
                 </div>
               </div>
             </div>
+            <div class="blog-item item">
+              <div class="blog-item-inner">
+                <div class="blog-img">
+                  <img src="assats/image/blog-1.png" alt="" />
+                  <div class="date">
+                    <span>July 30,2020</span>
+                  </div>
+                </div>
+                <div class="blog-text">
+                  <strong>
+                    Consectetur, adipisci velit, sed quia non numquam eius modi
+                    tempora incidunt.
+                  </strong>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium totam rem
+                    aperiam.
+                  </p>
+                  <a href="#" class="btn"> read more</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            767: {
+              items: 2,
+            },
+            992: {
+              items: 3,
+            },
+          },
+        });
+      </script>
       <!-- end blogs   section -->
       <!-- start Brand  section -->
       <div class="Brand-outer">
@@ -620,25 +843,49 @@
           <div class="title">
             <h2>Shop By <i>Brand</i></h2>
           </div>
-          <div class="Brand-inner">
-            <div class="Brand-item">
+          <div class="Brand-inner owl-carousel owl-theme">
+              <div class="Brand-item item">
               <img src="assats/image/brand1.png" alt="" />
             </div>
-            <div class="Brand-item">
+              <div class="Brand-item item">
               <img src="assats/image/brand2.png" alt="" />
             </div>
-            <div class="Brand-item">
+              <div class="Brand-item item">
               <img src="assats/image/brand3.png" alt="" />
             </div>
-            <div class="Brand-item">
+              <div class="Brand-item item">
               <img src="assats/image/brand4.png" alt="" />
             </div>
-            <div class="Brand-item">
+              <div class="Brand-item item">
               <img src="assats/image/brand5.png" alt="" />
             </div>
           </div>
         </div>
       </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          dots: false,
+          responsive: {
+            0: {
+              items: 2,
+            },
+            480: {
+              items: 3,
+            },
+            768: {
+              items: 4,
+            },
+            992: {
+              items: 5,
+            },
+          },
+        });
+      </script>
       <!-- end Brand  section -->
       <!-- start services  section -->
       <div class="services-outer">
@@ -727,6 +974,13 @@
           </div>
         </div>
       </div>
+      <script >
+        $(document).ready(function(){
+          $(".top-title").click(function(){
+            $(this).nextAll().slideToggle()
+          })
+        })
+      </script>
       <!-- bottom -->
        <div class="footer-bottom">
         <div class="container">
@@ -741,8 +995,37 @@
           </div>
         </div>
        </div>
-      <!-- bottom -->
-    </div>
+    
+       <!-- bottom -->
+      </div>
+      <div class="pop-outer" id="popOuter" onclick="pop()">
+        <div class="pop-inner">
+          <h2>Newsletter</h2>
+          <p>
+            Subscribe to our newsletter to get exclusive discounts and new theme
+            update right in your
+          </p>
+          <p>inbox</p>
+          <input type="email" class="email" placeholder="your email address" />
+          <a href="#" class="sub">subscribe</a>
+          <input type="checkbox" class="checkbox" /><span
+            >Don’t show this popup again
+          </span>
+          <button href="" class="icon" onclick="pop()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+       <button id="top" onclick="topbtn()">
+         <i class="fa-solid fa-chevron-up"></i>
+       </button>
+       <button class="whatsapp">
+         <i class="fa-brands fa-whatsapp"></i>
+       </button>
+     </div>
     <!-- end footer section   -->
+    <script src="assats/js/js.js"></script>
+
   </body>
 </html>
