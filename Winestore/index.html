@@ -30,6 +30,9 @@
         <div class="container">
           <div class="top-inner">
             <div class="top-item">
+              <div class="bars" id="bars">
+                <i class="fa-solid fa-bars"></i>
+              </div>
               <img
                 src="assats/image/winestore-logo-1611306408.jpg"
                 alt="winestore-logo-1611306408"
@@ -60,7 +63,7 @@
               <a href="#" class="icon-aftew">shop</a>
               <ul class="sub-item">
                 <li>
-                  <a href="#" class="btn-icon1">fashion</a>
+                  <a href="#" class="icon-aftew2">fashion</a>
                   <ul class="sub-item-inner">
                     <li><a href="#">men</a></li>
                     <li><a href="#">women</a></li>
@@ -69,7 +72,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="btn-icon1">jewellery</a>
+                  <a href="#" class="icon-aftew2">jewellery</a>
                   <ul class="sub-item-inner">
                     <li><a href="#">Rings</a></li>
                     <li><a href="#">Bracelets</a></li>
@@ -78,7 +81,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="btn-icon1">furniture</a>
+                  <a href="#" class="icon-aftew2">furniture</a>
                   <ul class="sub-item-inner">
                     <li><a href="#">Living Room</a></li>
                     <li><a href="#">Kitchen</a></li>
@@ -87,7 +90,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="btn-icon1">autoparts</a>
+                  <a href="#" class="icon-aftew2">autoparts</a>
                   <ul class="sub-item-inner">
                     <li><a href="#">Home Decor </a></li>
                     <li><a href="#">Exhaust Parts</a></li>
@@ -101,7 +104,7 @@
               <a href="#" class="icon-aftew">electronics</a>
               <ul class="sub-item">
                 <li>
-                  <a href="#" class="btn-icon1">mobiles</a>
+                  <a href="#" class="icon-aftew2">mobiles</a>
                   <ul class="sub-item-inner">
                     <li><a href="#">apple </a></li>
                     <li><a href="#">black berry</a></li>
@@ -110,7 +113,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="#" class="btn-icon1">cameras</a>
+                  <a href="#" class="icon-aftew2">cameras</a>
                   <ul class="sub-item-inner">
                     <li><a href="#">DSLR </a></li>
                     <li><a href="#">lences</a></li>
@@ -124,7 +127,7 @@
               <a href="#" class="icon-aftew">sports & books</a>
               <ul class="sub-item">
                 <li>
-                  <a href="#">sports</a>
+                  <a href="#" class="icon-aftew2">sports</a>
                   <ul class="sub-item-inner">
                     <li><a href="#">football </a></li>
                     <li><a href="#">vollyball</a></li>
@@ -132,7 +135,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="#">books</a>
+                  <a href="#" class="icon-aftew2">books</a>
                   <ul class="sub-item-inner">
                     <li><a href="#">literature</a></li>
                     <li><a href="#">philosophy</a></li>
@@ -146,6 +149,27 @@
           </ul>
         </div>
       </div>
+<div class="small-search-outer">
+      <div class="container">
+        <form action="" class="small-search">
+          <input type="text" placeholder="Search our catalog" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+      </div>
+    </div>
+      <script>
+        $(document).ready(function () {
+          $(".bottom-inner>li>a").click(function () {
+            $(this).next().slideToggle();
+          });
+          $(".sub-item >li>a").click(function () {
+            $(this).next().slideToggle();
+          });
+          $("#bars").click(function(){
+            $(".header-bottom").slideToggle()
+          })
+        });
+      </script>
       <!-- end header-bottom section-->
     </div>
     <!-- end header section-->
@@ -171,7 +195,7 @@
           </div>
         </div>
         <div class="slider-inner item">
-          <img src="assats/image/sample-1.jpg.crdownload" alt="sample.jpg" />
+          <img src="assats/image/sample-1.jpg" alt="sample.jpg" />
           <div class="slider-text slider-text1">
             <div class="container">
               <p>
@@ -188,10 +212,7 @@
           </div>
         </div>
         <div class="slider-inner item">
-          <img
-            src="assats/image/sample-3 (1).jpg.crdownload"
-            alt="sample.jpg"
-          />
+          <img src="assats/image/sample-3.jpg" alt="sample.jpg" />
           <div class="slider-text slider-text1">
             <div class="container">
               <p>
@@ -252,7 +273,7 @@
             </div>
             <div class="shop-item item">
               <div class="shop-item-inner">
-                <img src="assats/image/3_thumb.jpg.crdownload" alt="1" />
+                <img src="assats/image/3_thumb.jpg" alt="1" />
                 <div class="shop-text">
                   <p>shop</p>
                   <a href="#" class="btn">shop now</a>
@@ -704,7 +725,7 @@
         $(".owl-carousel").owlCarousel({
           loop: true,
           margin: 0,
-          nav: true,
+          nav: false,
           autoplay: true,
           autoplayTimeout: 3000,
           dots: false,
@@ -851,7 +872,7 @@
         <div class="container">
           <div class="middel-inner">
             <div class="middel-item">
-              <div class="middel-title">Contact</div>
+              <div class="middel-title icon-aftew2">Contact</div>
               <ul>
                 <li>
                   <span class="location">Address</span>
@@ -874,7 +895,7 @@
             </div>
 
             <div class="middel-item">
-              <div class="middel-title">Contact</div>
+              <div class="middel-title icon-aftew2">Products</div>
               <ul>
                 <li><a href=""> Secure payment </a></li>
                 <li><a href=""> Prices drop </a></li>
@@ -885,7 +906,7 @@
               </ul>
             </div>
             <div class="middel-item">
-              <div class="middel-title">Contact</div>
+              <div class="middel-title icon-aftew2">Our company</div>
               <ul>
                 <li>
                   <a href="">Delivery</a>
@@ -896,7 +917,7 @@
               </ul>
             </div>
             <div class="middel-item">
-              <div class="middel-title">Contact</div>
+              <div class="middel-title icon-aftew2">Your account</div>
               <ul>
                 <li><a href=""> Personal info </a></li>
                 <li><a href=""> Orders </a></li>
@@ -907,6 +928,13 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function () {
+          $(".middel-title").click(function () {
+            $(this).next().slideToggle();
+          });
+        });
+      </script>
       <div class="footer-bottom">
         <div class="container">
           <div class="bottom-inner">
@@ -941,9 +969,14 @@
         </button>
       </div>
     </div>
+    <div class="container">
     <button id="top" onclick="topbtn()">
       <i class="fa-solid fa-chevron-up"></i>
     </button>
+    <button class="whatsapp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </button>
+  </div>
     <script src="assats/js/js.js"></script>
   </body>
 </html>
